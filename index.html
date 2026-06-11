@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Courses Registration Form</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .welcome {
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      margin-bottom: 12px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(99, 102, 241, 0.10);
+      border: 1px solid rgba(99, 102, 241, 0.20);
+      color: #312e81;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 14px;
+      padding: 22px 20px;
+      box-shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+    }
+
+    label {
+      font-weight: 700;
+      display: inline-block;
+      margin: 10px 0 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(15, 23, 42, 0.18);
+      background: #ffffff;
+      outline: none;
+      font-size: 14.5px;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+    }
+
+    .radio-group {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px 14px;
+      align-items: center;
+      margin-top: 6px;
+    }
+
+    .radio-group label {
+      margin: 0;
+      font-weight: 600;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    input[type="radio"] {
+      accent-color: #6366f1;
+      width: 16px;
+      height: 16px;
+    }
+
+    button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 12px 14px;
+      border: 0;
+      border-radius: 12px;
+      background: #4f46e5;
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      transition: transform 120ms ease, background 120ms ease;
+    }
+
+    button:hover { background: #4338ca; }
+    button:active { transform: translateY(1px); }
+
+    .footer {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13.5px;
+      color: rgba(15, 23, 42, 0.72);
+    }
+
+    .link {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .link:hover { text-decoration: underline; }
+
+    @media (max-width: 560px) {
+      .radio-group { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="welcome">
+      Welcome to the Courses Portal
+    </div>
+    <h2>Courses Registration Form</h2>
+
+    <form>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br><br>
+
+    <label>Student ID:</label><br>
+    <input type="text" name="studentid"><br><br>
+
+    <label>Select Course:</label><br>
+    <select name="course">
+      <option>Web Development</option>
+      <option>Mobile App Development</option>
+      <option>Data Science</option>
+      <option>Cyber Security</option>
+    </select><br><br>
+
+    <label>Level:</label><br>
+    <input type="radio" name="level" value="Beginner"> Beginner
+    <input type="radio" name="level" value="Intermediate"> Intermediate
+    <input type="radio" name="level" value="Advanced"> Advanced
+
+    <br><br>
+
+    <button type="submit">Register</button>
+
+  </form>
+
+    <footer class="footer">
+      <div><strong>Designed by</strong> RURANGWABUGABO MODESTE</div>
+      <div>Tel: <a class="link" href="tel:0735640974">0735640974</a></div>
+      <div>Email: <a class="link" href="mailto:rurangwabugabomodeste@gmail.com">rurangwabugabomodeste@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
